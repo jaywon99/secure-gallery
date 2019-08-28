@@ -1,5 +1,7 @@
 {
   "name": "secure-gallery",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

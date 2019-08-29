@@ -12,8 +12,8 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col size="3" *ngFor="let photo of photoService.photos">
-        <img [src]="photo.data" />
+      <ion-col *ngFor="let photo of photoService.photos">
+        <div class="image-container" [style.background-image]="'url(' + photo.data + ')'"></div>
       </ion-col>
     </ion-row>
   </ion-grid>

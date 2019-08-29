@@ -10,6 +10,7 @@ export class HomePage {
 
   constructor(public photoService: PhotoService) {}
 
+  // tslint:disable-next-line: use-lifecycle-interface
   ngOnInit() {
     this.photoService.loadPhotos();
   }

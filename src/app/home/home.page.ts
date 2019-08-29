@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PhotoService } from '../services/photo.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public photoService: PhotoService) {}
 
+  // tslint:disable-next-line: use-lifecycle-interface
+  ngOnInit() {
+    this.photoService.loadPhotos();
+  }
 }
